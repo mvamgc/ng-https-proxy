@@ -64,17 +64,6 @@ Add to the server section (keep listen 80, if you like):
     ssl_certificate_key /etc/nginx/ssl/nginx.key;
 ```
 
-
-server {
-    listen              443 ssl;
-    server_name         www.example.com;
-    ssl_certificate     www.example.com.crt;
-    ssl_certificate_key www.example.com.key;
-    ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
-    ssl_ciphers         HIGH:!aNULL:!MD5;
-    ...
-}
-
 now rebuild and restart
 
 ```
